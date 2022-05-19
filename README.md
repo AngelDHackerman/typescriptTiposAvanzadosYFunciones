@@ -5,3 +5,10 @@ Aparte de toda la configuracion basica de TS. Tambien usamos una libreria llamad
 ## Instalando ts-node 
 
 [Pagina de ts-node](https://typestrong.org/ts-node/docs/installation)
+
+
+## Instalando capacitor 
+
+En este caso instalamos un plugIn de capacitor para usar la camara del dispositivo donde estamos.
+
+[Pagina de capacito](https://capacitorjs.com/docs/apis/camera)
