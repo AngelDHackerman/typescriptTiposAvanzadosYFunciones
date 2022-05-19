@@ -1,0 +1,22 @@
+{
+  "name": "typescripttiposavanzadosyfunciones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDHackerman/typescriptTiposAvanzadosYFunciones.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngelDHackerman/typescriptTiposAvanzadosYFunciones/issues"
+  },
+  "homepage": "https://github.com/AngelDHackerman/typescriptTiposAvanzadosYFunciones#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
