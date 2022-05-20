@@ -28,9 +28,16 @@ unknownVar = [];
 unknownVar = {};
 
 // unknownVar.doSomething();  // * Esto no va a funcionar porque si nos detecta el tipado.
+
+// ? Tenemos que hacer una verificacion de tipo si queremos usar los metodos o los tipados de una variable
 if ( typeof unknownVar === 'string') {
   unknownVar.toUpperCase();
 }
+
+if ( typeof unknownVar === 'boolean') {
+  let isNew2: boolean = unknownVar;
+}
+
 
 const parse = (str: string): unknown => {
   return JSON.parse(str);
