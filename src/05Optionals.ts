@@ -6,7 +6,7 @@ export const createProduct = (
   return {
     id,
     stock: stock ?? 10, // * si NO le pasamos el parametro stock, por DEFECTO recibira el 10.
-    isNew: isNew ?? true,
+    isNew: isNew ?? true, // * ?? Nullish selector
   }
 };
 
