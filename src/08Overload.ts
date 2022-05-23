@@ -12,6 +12,9 @@ function parseStr (input: string | string[]): string | string[] {
 };
 
 const rtaArray = parseStr('Angel');
+if (Array.isArray(rtaArray)) {
+  rtaArray.reverse();
+}
 console.log('rtaArray:', rtaArray);
 
 const rtaStr = parseStr(['A','n','g','e','l']);
