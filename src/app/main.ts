@@ -1,27 +1,28 @@
 import faker from '@faker-js/faker';
 
-import { addProduct, products } from "./products/product.service";
+import { addProduct, products } from './products/product.service';
 
 for (let index = 0; index < 50; index++) {
   addProduct({
-    id: faker.faker.datatype.uuid(),
-    description: faker.faker.commerce.productDescription(),
-    image: faker.faker.image.imageUrl(),
-    color: '#eee',
-    size: 'XL',
-    price: parseInt(faker.faker.commerce.price(), 10),
-    isNew: faker.faker.datatype.boolean(),
-    title: faker.faker.commerce.productName(),
-    createdAt: faker.faker.date.recent(),
-    updatedAt: faker.faker.date.recent(),
-    stock: faker.faker.datatype.number({min: 10, max: 100, precision: 0.01}),
+    id: faker.datatype.uuid(),
+    description: faker.commerce.productDescription(),
+    image: faker.image.imageUrl(),
+    color: faker.commerce.color(),
+    size: faker.random.arrayElement(['M', 'S', 'XL', 'L']),
+    price: parseInt(faker.commerce.price(), 10),
+    isNew: faker.datatype.boolean(),
+    tags: faker.random.arrayElements(),
+    title: faker.commerce.productName(),
+    createdAt: faker.date.recent(),
+    updatedAt: faker.date.recent(),
+    stock: faker.datatype.number({min: 10, max: 100}),
     category: {
-      id: faker.faker.datatype.uuid(),
-      name: faker.faker.commerce.department(),
-      createdAt: faker.faker.date.recent(),
-      updatedAt: faker.faker.date.recent(),
+      id: faker.datatype.uuid(),
+      name: faker.commerce.department(),
+      createdAt: faker.date.recent(),
+      updatedAt: faker.date.recent(),
     }
   });
 }
 
-console.log(products)
+console.log(products);
