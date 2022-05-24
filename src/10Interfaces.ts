@@ -3,7 +3,7 @@
 type Size = 'S' | 'M' | 'L' | 'XL';
 type userId = string | number;
 
-interface Product {
+export interface Product {
   id: string | number;
   title: string;
   createAt: Date;
