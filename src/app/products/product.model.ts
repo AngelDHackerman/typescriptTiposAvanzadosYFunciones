@@ -14,7 +14,6 @@ export interface Product extends BaseModel {    // extends BaseModel, esto le va
   price: number
   category: Category; // En lugar de hacer un objeto anidado creamos un modulo en category.
   isNew: boolean;
-  tags: string[];
   size?: Sizes;
 }
 
