@@ -19,3 +19,11 @@ export interface UpdateProductDto extends Partial<CreateProductDto> {
 // ? Required, hace que todas las opciones de tipado sean REQUERIDAS
 
 type example2 = Required<Product>;
+
+
+
+export interface FindProductDto extends Readonly<Partial<Product>> {}
+
+// ? Readonly, hace que todas las opciones de tipado sean READONLY
+
+type example3 = Readonly<Product>;
