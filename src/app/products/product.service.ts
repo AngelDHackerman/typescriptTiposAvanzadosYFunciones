@@ -37,6 +37,8 @@ export const updateProduct = (id: string, changes: UpdateProductDto ): Product =
 
 export const findProducts = (dto: FindProductDto): Product[] => {
   // search code(que puede venir de una base datos)
+  // dto.color = 'blue';
+  // dto.isNew = true;
 
   return products;
 }
