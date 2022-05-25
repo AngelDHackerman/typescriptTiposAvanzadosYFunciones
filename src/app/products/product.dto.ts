@@ -9,3 +9,8 @@ export interface CreateProductDto extends Omit<Product, 'id' | 'createdAt' | 'up
 }
 
 type example = Pick<Product, 'color' | 'description'>;
+
+// ! Partial, pone todos opciones de tipado como opcionales "name?: 'juanito'"
+export interface UpdateProductDto extends Partial<CreateProductDto> {
+
+}
